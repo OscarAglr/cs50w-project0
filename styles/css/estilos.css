@@ -1,24 +1,33 @@
-card {
-  width: 85%;
-  height: 200px;
-  border-radius: 5px;
+.titulo {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-top: 20px;
 }
 
-#banner {
+#banner, #banner-culture, #banner-index {
   width: 100%;
   height: auto;
-  background: url("/images/grecia1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
+  font-family: "Ubuntu", sans-serif;
+}
+
+#banner-index {
   background-size: cover;
   background-blend-mode: darken;
-  font-family: "Ubuntu", sans-serif;
+  background: url("/images/grecia1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
   padding: 25px 10px;
 }
-#banner p {
+
+#banner-index > p {
   font-size: 24px;
   color: #ffffff;
   margin: auto 25px;
 }
-#banner h1 {
+
+#banner-index > h1 {
   text-align: center;
   color: #e5e5e5;
   font-weight: bold;
@@ -31,9 +40,6 @@ card {
 .container {
   padding-top: 20px;
 }
-.container p {
-  font-size: 24px;
-}
 .container h2 {
   color: #000814;
   font-weight: bold;
@@ -42,12 +48,31 @@ card {
   letter-spacing: 3px;
   margin-top: 25px;
 }
-.container img {
+.container p {
+  font-size: 24px;
+}
+
+.container > img {
   width: 45%;
   height: 225px;
   float: left;
   margin: 0 15px 0 0;
   display: block;
+}
+
+#banner-culture {
+  background-size: cover;
+  background-blend-mode: darken;
+  background: url("/images/culture1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
+  padding: 30px;
+}
+#banner-culture h1 {
+  text-align: center;
+  color: #e5e5e5;
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: 3px;
+  margin: 30px auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,41 +1,47 @@
-card {
-
-    width: 85%;
-    height: 200px;
-    border-radius: 5px;
-    
+.titulo {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-top: 20px;
 }
 $size: 24px;
 #banner {
     width: 100%;
     height: auto;
-    background: url('/images/grecia1.jpg') no-repeat center rgba(0, 0, 0, 0.7);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#banner-index {
+    @extend #banner;
     background-size: cover;
     background-blend-mode: darken;
-    font-family: 'Ubuntu', sans-serif;
+    background: url('/images/grecia1.jpg') no-repeat center rgba(0, 0, 0, 0.7);
     padding: 25px 10px;
-    p {
-        font-size: $size;
-        color: #ffffff;
-        margin: auto 25px;
-    }
+    
+}
 
-    h1 {
-        text-align: center;
-        color: #e5e5e5;
-        font-weight: bold;
-        margin-bottom: 25px;
-        font-size: 40px;
-        letter-spacing: 3px;
-        margin-top: 10px;
-    }
+#banner-index > p {
+    font-size: $size;
+    color: #ffffff;
+    margin: auto 25px;
+}
+
+#banner-index > h1 {
+    text-align: center;
+    color: #e5e5e5;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-top: 10px;
 }
 
 .container {
     padding-top: 20px;
-    p {
-        font-size: $size;
-    }
+
     h2 {
         color: #000814;
         font-weight: bold;
@@ -44,11 +50,33 @@ $size: 24px;
         letter-spacing: 3px;
         margin-top: 25px;
     }
-    img {
-        width: 45%;
-        height: 225px;
-        float: left;
-        margin: 0 15px 0 0;
-        display: block;
+
+    p {
+        font-size: $size;
+    }
+}
+
+.container > img {
+    width: 45%;
+    height: 225px;
+    float: left;
+    margin: 0 15px 0 0;
+    display: block;
+}
+
+#banner-culture {
+    @extend#banner;
+    background-size: cover;
+    background-blend-mode: darken;
+    background: url('/images/culture1.jpg') no-repeat center rgba(0, 0, 0, 0.7);
+    padding: 30px;
+
+    h1 {
+        text-align: center;
+        color: #e5e5e5;
+        font-weight: bold;
+        font-size: 64px;
+        letter-spacing: 3px;
+        margin: 30px auto;
     }
 }
