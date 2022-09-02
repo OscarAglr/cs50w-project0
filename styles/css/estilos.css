@@ -1,0 +1,38 @@
+card {
+  width: 85%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  background: url("/images/grecia1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: darken;
+  font-family: "Ubuntu", sans-serif;
+  padding: 25px 10px;
+}
+#banner p {
+  font-size: 24px;
+  color: #ffffff;
+  margin: auto 25px;
+}
+#banner h1 {
+  text-align: center;
+  color: #e5e5e5;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.container {
+  padding-top: 20px;
+}
+.container p {
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
