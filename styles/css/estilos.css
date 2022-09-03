@@ -1,13 +1,4 @@
-.titulo {
-  text-align: center;
-  color: #000000;
-  font-weight: bold;
-  margin-bottom: 25px;
-  font-size: 40px;
-  letter-spacing: 2px;
-  margin-top: 20px;
-}
-
+@charset "UTF-8";
 #banner, #banner-fp, #banner-culture, #banner-history, #banner-index {
   width: 100%;
   height: auto;
@@ -23,7 +14,7 @@
 
 #banner-index > p {
   font-size: 24px;
-  color: #ffffff;
+  color: #fff;
   margin: auto 25px;
 }
 
@@ -42,7 +33,7 @@
   background-size: 100% auto;
   background-blend-mode: darken;
   background-position: center;
-  padding: 25px 10px;
+  padding: 30px;
 }
 #banner-history h1 {
   text-align: center;
@@ -51,29 +42,6 @@
   font-size: 64px;
   letter-spacing: 3px;
   margin: 45px auto;
-}
-
-.container {
-  padding-top: 20px;
-}
-.container h3 {
-  color: #000814;
-  font-weight: bold;
-  margin-bottom: 15px;
-  font-size: 28px;
-  letter-spacing: 3px;
-  margin-top: 25px;
-}
-.container p {
-  font-size: 24px;
-}
-
-.container > img {
-  width: 45%;
-  height: 225px;
-  float: left;
-  margin: 0 15px 0 0;
-  display: block;
 }
 
 #banner-culture {
@@ -107,6 +75,55 @@
   font-size: 64px;
   letter-spacing: 1px;
   margin: 45px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #banner-index h1 {
+    font-size: 24px;
+  }
+  #banner-index p {
+    font-size: 16px;
+  }
+  #banner-history {
+    padding: 10px auto;
+  }
+  #banner-history h1 {
+    font-size: 32px;
+  }
+  #banner-culture {
+    padding: 10px auto;
+  }
+  #banner-culture h1 {
+    font-size: 32px;
+  }
+  #banner-fp {
+    padding: 10px auto;
+  }
+  #banner-fp h1 {
+    font-size: 32px;
+  }
+}
+.container {
+  padding-top: 20px;
+}
+.container h3 {
+  color: #000814;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-top: 25px;
+}
+.container p {
+  font-size: 24px;
+}
+
+.container > img {
+  width: 45%;
+  height: 225px;
+  float: left;
+  margin: 0 15px 0 0;
+  display: block;
 }
 
 #galeria img {
@@ -200,6 +217,25 @@
 
 .card:hover::before {
   opacity: 1;
+}
+
+.i-list ul {
+  list-style: none;
+}
+.i-list li::before {
+  content: "•";
+  font-size: 25px;
+  color: #00509d;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.i-list a {
+  color: #03045e;
+  text-decoration: none;
+}
+.i-list a:hover {
+  color: #e71d36;
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,18 +1,13 @@
-.titulo {
-    text-align: center;
-    color: #000000;
-    font-weight: bold;
-    margin-bottom: 25px;
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-}
 $size: 24px;
+$white: #fff;
+$white2: #e5e5e5;
+
 #banner {
     width: 100%;
     height: auto;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 #banner-index {
     @extend #banner;
@@ -25,13 +20,13 @@ $size: 24px;
 
 #banner-index > p {
     font-size: $size;
-    color: #ffffff;
+    color: $white;
     margin: auto 25px;
 }
 
 #banner-index > h1 {
     text-align: center;
-    color: #e5e5e5;
+    color: $white2;
     font-weight: bold;
     margin-bottom: 25px;
     font-size: 40px;
@@ -46,16 +41,89 @@ $size: 24px;
     background-size: 100% auto;
     background-blend-mode: darken;
     background-position: center;
-    padding: 25px 10px;
+    padding: 30px;
 
     h1 {
         text-align: center;
-        color: #e5e5e5;
+        color: $white2;
         font-weight: bold;
         font-size: 64px;
         letter-spacing: 3px;
         margin: 45px auto;
     }
+}
+
+#banner-culture {
+    @extend#banner;
+    
+    background-blend-mode: darken;
+    background: url('/images/culture1.jpg') no-repeat center rgba(0, 0, 0, 0.7);
+    background-size: 100% auto;
+    background-position: center;
+    padding: 30px;
+
+    h1 {
+        text-align: center;
+        color: $white2;
+        font-weight: bold;
+        font-size: 64px;
+        letter-spacing: 3px;
+        margin: 45px auto;
+    }
+}
+
+#banner-fp {
+    @extend#banner;
+    background-blend-mode: darken;
+    background: url('/images/academia.jpg') no-repeat center rgba(0, 0, 0, 0.7);
+    background-size: 100% auto;
+    background-position: center top;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    h1 {
+        text-align: center;
+        color: $white2;
+        font-weight: bold;
+        font-size: 64px;
+        letter-spacing: 1px;
+        margin: 45px auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #banner-index h1{
+        font-size: 24px;
+    }
+
+    #banner-index p {
+        font-size: 16px;
+    }
+
+    #banner-history {
+        padding: 10px auto;
+    }
+
+    #banner-history h1 {
+        font-size: 32px;
+    }
+
+    #banner-culture {
+        padding: 10px auto;
+    }
+
+    #banner-culture h1 {
+        font-size: 32px;
+    }
+
+    #banner-fp {
+        padding: 10px auto;
+    }
+
+    #banner-fp h1 {
+        font-size: 32px;
+    }
+
 }
 
 .container {
@@ -83,43 +151,7 @@ $size: 24px;
     display: block;
 }
 
-#banner-culture {
-    @extend#banner;
-    
-    background-blend-mode: darken;
-    background: url('/images/culture1.jpg') no-repeat center rgba(0, 0, 0, 0.7);
-    background-size: 100% auto;
-    background-position: center;
-    padding: 30px;
 
-    h1 {
-        text-align: center;
-        color: #e5e5e5;
-        font-weight: bold;
-        font-size: 64px;
-        letter-spacing: 3px;
-        margin: 45px auto;
-    }
-}
-
-#banner-fp {
-    @extend#banner;
-    background-blend-mode: darken;
-    background: url('/images/academia.jpg') no-repeat center rgba(0, 0, 0, 0.7);
-    background-size: 100% auto;
-    background-position: center top;
-    padding: 30px;
-    margin-bottom: 30px;
-
-    h1 {
-        text-align: center;
-        color: #e5e5e5;
-        font-weight: bold;
-        font-size: 64px;
-        letter-spacing: 1px;
-        margin: 45px auto;
-    }
-}
 
 #galeria img {
     width: 100%;
@@ -150,11 +182,14 @@ $size: 24px;
     }
 }
 
+@media (min-width: 576px) {
+    
+}
 .card {
     width: 300px;
     height: 400px;
     padding: 2rem 1rem;
-    background: #fff;
+    background: $white;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -174,7 +209,7 @@ $size: 24px;
     .info {
         position: relative;
         z-index: 3;
-        color: #fff;
+        color: $white;
         opacity: 0;
         transform: translateY(30px);
         transition: 0.5s all;
@@ -218,6 +253,28 @@ $size: 24px;
 }
 .card:hover::before {
     opacity: 1;
-
 }
 
+.i-list {
+    ul {
+        list-style: none;
+    }
+
+    li::before {
+        content: "•"; 
+        font-size: 25px;
+        color: #00509d;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+    }
+    
+    a {
+        color: #03045e;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #e71d36;
+    }
+}
