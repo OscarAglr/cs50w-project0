@@ -8,7 +8,7 @@
 #banner-index {
   background-size: cover;
   background-blend-mode: darken;
-  background: url("../images/grecia1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
+  background: url("/images/grecia1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
   padding: 25px 10px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 #banner-history {
-  background: url("../images/computer-game-ancient-greece-eddie-bennun-assassin-s-creed-odyssey-hd-wallpaper-preview.jpg") no-repeat center rgba(0, 0, 0, 0.7);
+  background: url("/images/computer-game-ancient-greece-eddie-bennun-assassin-s-creed-odyssey-hd-wallpaper-preview.jpg") no-repeat center rgba(0, 0, 0, 0.7);
   background-size: 100% auto;
   background-blend-mode: darken;
   background-position: center;
@@ -46,7 +46,7 @@
 
 #banner-culture {
   background-blend-mode: darken;
-  background: url("../images/culture1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
+  background: url("/images/culture1.jpg") no-repeat center rgba(0, 0, 0, 0.7);
   background-size: 100% auto;
   background-position: center;
   padding: 30px;
@@ -62,7 +62,7 @@
 
 #banner-fp {
   background-blend-mode: darken;
-  background: url("../images/academia.jpg") no-repeat center rgba(0, 0, 0, 0.7);
+  background: url("/images/academia.jpg") no-repeat center rgba(0, 0, 0, 0.7);
   background-size: 100% auto;
   background-position: center top;
   padding: 30px;
